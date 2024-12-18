@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+/*BtnArea*/
+.BtnArea {text-align:right; margin-bottom:30px}
+
+/*calendar*/
+div.schedule-info {clear:both; overflow:hidden}
+div.schedule-info span.info {float:left; color:#666; padding:4px 10px 3px}
+div.schedule-info span.schedule-all {float:right; background:#fff; border:1px solid #51B69F; border-radius:50px; box-sizing:border-box;  padding:6px 7px 6px 5px; margin-right:5px}
+div.schedule-info span.schedule-all a {color:#51B69F}
+div.DateArea {clear:both; position:relative; padding:3px 0 28px; overflow:hidden}
+div.DateArea h1 {display:block; color:#333; font-size:34px; font-weight:normal; float:left; line-height: 39px}
+div.DateArea div.btn-area {margin-left:10px; position:relative; float:left}
+div.DateArea div.btn-area a {border:1px solid #ddd; border-radius:100px; display:inline-block; float:left; width:40px; height:40px; position:relative; margin-right:5px; transition:all .2s}
+div.DateArea div.btn-area a.pre_month:before {content:''; position:absolute; left:15px; top:12px; border:3px solid #ddd; border-left:0; border-bottom:0; width:10px; height:10px; transform: rotate(-140deg)}
+div.DateArea div.btn-area a.next_month:before {content:''; position:absolute; left:10px; top:12px; border:3px solid #ddd; border-left:0; border-bottom:0; width:10px; height:10px; transform: rotate(45deg)}
+div.DateArea div.btn-area a.pre_month:hover:before, 
+div.DateArea div.btn-area a.next_month:hover:before{border-color:#fff}
+div.DateArea div.btn-area a.All-schedule {border:1px solid #e36f51; color:#e36f51; padding:0 20px; width:auto; line-height:38px}
+div.DateArea div.btn-area a:hover {border:1px solid #e36f51; background:#e36f51; color:#fff}
+div.DateArea div.notice {float:right; padding:10px 0 0}
+div.DateArea div.notice span.schedule {display:inline-block; margin-left:10px}
+
+/* 분류 */
+div.DateArea > div.notice > span.schedule > span.cateC01 {background:#F6C375}
+div.DateArea > div.notice > span.schedule > span.cateC02 {background:#DF7373}
+div.DateArea > div.notice > span.schedule > span.cateC03 {background:#8fbf57}
+div.DateArea > div.notice > span.schedule > span.cateC04 {background:#5A72C0}
+div.DateArea > div.notice > span.schedule > span.cateC05 {background:#8A65C2}
+div.DateArea > div.notice > span.schedule > span.cateC06 {background:#ccc}
+
+div.CalendarList div.Bhead > ul{background:#404759; clear:both; overflow:hidden}
+div.CalendarList div.Bhead > ul > li {color:#fff; float:left; font-size:13px; width:14.2%; text-align:center; padding:10px 0}
+div.CalendarList div.Bbody {background:#fff}
+div.CalendarList div.Bbody > ul > li {border-bottom:1px solid #f3f3f3; clear:both; overflow:hidden}
+div.CalendarList div.Bbody > ul > li:last-child {border-bottom:0}
+div.CalendarList div.Bbody > ul > li > span{display:block; float:left; font-size:14px; height:80px; text-align:center; width:14.2%; min-height:20px; position:relative}
+div.CalendarList div.Bbody > ul > li > span > a {color:#8d8686; display:block; height:100%; line-height:67px; position:relative}
+div.CalendarList div.Bbody > ul > li > span > a:before {content:''; position:absolute; left:28%; top:10px; border:1px solid rgba(0,0,0,0); border-radius:100px; width:45px; height:45px; display:block; transition:all .2s}
+div.CalendarList div.Bbody > ul > li > span > a:hover:before {border:1px solid rgba(0,0,0,.2)}
+div.CalendarList div.Bbody > ul > li > span > a.current {color:#666; display:block; position:relative; z-index:1}
+div.CalendarList div.Bbody > ul > li > span > a.current:after {background:#eee; border-radius:100px; width:45px; height:45px; content:''; display:block; margin:-55px auto 0; z-index:-1}
+div.CalendarList div.Bbody > ul > li > span > span.schedule {display:block; width:100%; text-align:center; position:absolute; bottom:3px}
+span.schedule {display:block; text-align:right; color:#666}
+span.schedule span {border-radius:50px; display:inline-block; width:6px; height:6px; vertical-align:2px}
+span.schedule span.txt {margin:0 5px 0 5px; width:auto; height:auto; vertical-align:0}
+
+/* 분류 */
+div.CalendarList span.cateC01 {background:#F6C375}
+div.CalendarList span.cateC02 {background:#DF7373}
+div.CalendarList span.cateC03 {background:#8fbf57}
+div.CalendarList span.cateC04 {background:#5A72C0}
+div.CalendarList span.cateC05 {background:#8A65C2}
+div.CalendarList span.cateC06 {background:#ccc}
+
+/*ScheduleList*/
+div.ScheduleList > span.nodata {background:#fff; border: 1px solid #ddd; box-sizing:border-box; border-radius:3px; color:#999; display:block; text-align:center; font-size:14px; padding:15px 10px; margin-top:5px}
+div.ScheduleList > div {background:#fff; border: 1px solid #ddd; box-sizing:border-box; clear:both; overflow:hidden; margin-top:-1px}
+div.ScheduleList > div > a span.day {display:block; border-right:1px solid #ddd; box-sizing:border-box; font-size:25px; float:left; text-align:center; width:15%; margin:0 15px 0 0; line-height:35px;}
+div.ScheduleList > div > a span.day > span {font-size:14px; color:#999}
+div.ScheduleList > div > a {display:block; box-sizing:border-box; float:left; font-size:16px; padding:15px 10px; width:100%; min-height:50px}
+div.ScheduleList > div > a:hover span.title{color:#E36F51}
+div.ScheduleList > div > a span.group {width:82%; float:left; padding:7px 0 0; position:relative}
+div.ScheduleList > div > a span.group:after {border:1px solid #ddd; border-radius:100px; position:absolute; right:5px; top:5px; content:'자세히보기'; font-size:12px; padding:3px 10px; }
+div.ScheduleList > div > a:hover span.group:after {border:1px solid #E36F51; color:#E36F51}
+div.ScheduleList > div > a span.title {color:#333; font-size:16px; display: block; width:89%; white-space: nowrap;  text-overflow: ellipsis; overflow:hidden; padding:3px 0 0}
+div.ScheduleList > div > a span.title > span.comment {background:#51B69F;  border-radius:50px; color:#fff; font-size:12px; text-align:center; padding:3px 7px; position:absolute; right:17px}
+div.ScheduleList > div > a span.cate{border-radius:50px; color:#fff; display:table; font-size:14px; padding:2px 15px 4px; margin:0 10px 0 0; float:left}
+div.ScheduleList > div.notice {background:#fff; border:1px solid #ddd; box-sizing:border-box; color:#DF7373; font-size:14px; padding:7px 0; text-align:center}
+div.ScheduleList > div.notice img {width:25px; vertical-align:-8px}
+
+div.ScheduleList div.cateC01 {border-left:3px solid #F6C375}
+div.ScheduleList div.cateC01 span.cate {background:#f6c375}
+div.ScheduleList div.cateC02 {border-left:3px solid #DF7373}
+div.ScheduleList div.cateC02 span.cate {background:#DF7373}
+div.ScheduleList div.cateC03 {border-left:3px solid #8fbf57}
+div.ScheduleList div.cateC03 span.cate {background:#8fbf57}
+div.ScheduleList div.cateC04 {border-left:3px solid #5A72C0}
+div.ScheduleList div.cateC04 span.cate {background:#5A72C0}
+div.ScheduleList div.cateC05 {border-left:3px solid #8A65C2}
+div.ScheduleList div.cateC05 span.cate {background:#8A65C2}
+div.ScheduleList div.cateC06 {border-left:3px solid #ccc}
+div.ScheduleList div.cateC06 span.cate {background:#ccc}
+
+/*Schedule view*/
+div.BoardView {margin-bottom:30px}
+div.BoardView div.Bhead {border-top: 2px solid #464646; border-bottom:1px solid #d9d9d9; padding:15px 20px}
+div.BoardView div.Bhead p.title {color:#333; font-size:18px}
+div.BoardView div.Bhead p.title span {display:inline-block; float:left}
+div.BoardView div.Bhead p.title span > strong {display:none}
+div.BoardView div.Bhead p.title span > span {border-radius:50px; color:#fff; display:table; font-size:14px; padding:2px 15px 4px; margin:0 10px 0 0}
+div.BoardView div.Bhead p.title span.cateC01 > span {background:#e9b96f}
+div.BoardView div.Bhead p.title span.cateC02 > span {background:#df7373}
+div.BoardView div.Bhead p.title span.cateC03 > span {background:#8fbf57}
+div.BoardView div.Bhead p.title span.cateC04 > span {background:#5a72c0}
+div.BoardView div.Bhead p.title span.cateC05 > span {background:#8a65c2}
+div.BoardView div.Bhead p.title span.cateC06 > span {background:#ccc}
+div.BoardView div.Bhead p.title span.event_date {margin:3px 20px 0 0}
+div.BoardView div.Bhead p.title span.event_date > strong {color:#E36F51; display:inline-block; font-weight:normal; font-size:16px; float:left}
+div.BoardView div.Bhead p.title span.event_date > span {color:#E36F51; display:inline-block; font-size:16px; padding:0 0 0 5px}
+div.BoardView div.Bhead p.title span.tt {clear:both; display:block; float:none; padding:5px 0}
+div.BoardView div.Bhead ul li > strong {display:none}
+div.BoardView div.Bbody {border-bottom:1px solid #464646; padding:30px 20px; font-size:14px; line-height:26px}
+
+/* 댓글 */
+.CommentWrap {position:relative; min-height:260px; margin:30px 0 60px;}
+.CommentWrap h4 {margin-bottom:25px; padding:0 20px; border-top:1px solid #464646; border-bottom:1px solid #d9d9d9; font-size:1.05em; line-height:55px;}
+
+/* 댓글 목록 */
+.CommentWrap .commentList {padding-top:185px; border-bottom:1px solid #d1d1d1;}
+.CommentWrap li {position:relative; min-height:50px; padding:25px 0 55px 60px; border-top:1px solid #d1d1d1;}
+.CommentWrap li:before {position:absolute; left:0; top:25px; width:48px; height:49px; background:url('/main/img/common/comment_img.gif') no-repeat; content:'';}
+.CommentWrap .date {margin-left:5px; padding-left:15px; background:url('/main/img/common/icon_time.png') no-repeat 0 center; font-size:.9em; color:#6e7274;}
+.CommentWrap span.comment {display:block; margin-top:10px;}
+.CommentWrap .btn-recomment {position:absolute; left:60px; bottom:20px;}
+.CommentWrap .btn-recomment a {padding:0 5px; border:1px solid #cbcbcb; font-size:.85em; color:#333;}
+.CommentWrap .cmtDel a {position:absolute; right:20px; top:35px; width:12px; height:12px; font-size:0; line-height:0;}
+.CommentWrap .cmtDel a:before {position:absolute; left:0; top:0; width:100%; height:2px; margin:-1px 0 0 -50%; background-color:#333; content:''; transform:rotate(45deg);}
+.CommentWrap .cmtDel a:after {position:absolute; left:0; top:0; width:2px; height:100%; margin:-50% 0 0 -1px; background-color:#333; content:''; transform:rotate(45deg);}
+.CommentWrap .first {border-top:0 none;}
+.CommentWrap .re_comment {padding-left:120px; padding-bottom:20px; border-top:0 none;}
+.CommentWrap .re_comment:before {left:60px;}
+.CommentWrap .re_comment:after {position:absolute; left:20px; top:20px; width:18px; height:17px; border-left:1px solid #c7cfd9; border-bottom:1px solid #c7cfd9; content:'';}
+.CommentWrap .re_comment .btn-recomment {left:120px;}
+
+/* 댓글 쓰기 */
+.CommentWrap .cmtForm {position:absolute; left:0; top:80px; width:100%; height:180px; box-sizing:border-box; border:1px solid #b9b9b9; background-color:#f5f6f7; text-align:right;}
+.CommentWrap .cmtForm textarea.comment {width:100%; height:130px; padding:30px; box-sizing:border-box; border:0 none; border-bottom:1px solid #b9b9b9; text-align:left;}
+.CommentWrap .cmtForm .num {position:absolute; right:145px; bottom:0; height:50px; color:#555; line-height:50px;}
+.CommentWrap .cmtForm .Btn-Gray {width:120px; height:49px; padding:0; border:0 none; background-color:#6c7a88; text-align:center;}

@@ -1,0 +1,20 @@
+@charset "UTF-8";
+/*-------------------------------------------------
+title       : 레이아웃 반응형
+Author      : JYC
+Create date : 2024-01-11
+-------------------------------------------------*/
+@media (max-width: 1280px) { 
+  #header #gnb1{display: none;}
+  #siteinfo{padding-left: 25rem;}
+}
+
+@media (max-width: 768px) { 
+  #header .header_wrap{width:calc(100% - 4rem);}
+  #siteinfo .logo{position: static;margin-bottom: 3rem;}
+  #siteinfo{padding-left: 0;}
+  #footer .btn_top{right: 2rem;bottom: 2rem;}
+  #footer .btn_top.stick{transform: translateY(-23.3rem);}
+  #footer .related {position: static;margin-bottom: 3rem;}
+  #footer .footer_wrap{width:calc(100% - 4rem);}
+}

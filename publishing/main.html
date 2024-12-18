@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="_csrf_parameter" content="_csrf" />
+	<meta name="_csrf_header" content="X-XSRF-TOKEN" />
+	<meta name="_csrf" content="ff5f82f7-ce28-48c9-8b0a-5f472927ee5f" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,user-scalable=yes" />
+
+	<meta name="title" content="" />
+	<meta name="description" content="" />
+	<meta name="keyword" content="" />
+	<meta name="author" content="" />
+
+	<meta property="og:type" content="website" />
+	<meta property="og:site_name" content="" />
+	<meta property="og:title" content="" />
+	<meta property="og:url" content="http://localhost/?" />
+	<meta property="og:description" content="" />
+
+	<title></title>
+
+	<!-- 공통 CSS -->
+	<link rel="stylesheet" href="../css/default.css" />
+	<link rel="stylesheet" href="../css/layout.css" />
+	<link rel="stylesheet" href="../css/layout_respond.css" />
+
+	<!-- 메인 CSS -->
+	<link rel="stylesheet" href="../css/main.css" />
+	<link rel="stylesheet" href="../css/main_respond.css" />
+	<link rel="stylesheet" href="../css/main_es.css" />
+
+
+	<!-- 공통 JS -->
+	<script src="../jquery/js/jquery-1.11.2.min.js"></script>
+	<script src="../js/global.js"></script>
+	<link rel="stylesheet" href="../jquery/js/swiper-bundle.min.css">
+	<script src="../jquery/js/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+
+	<p id="skip_nav">
+		<a href="#contents">본문으로 바로가기</a>
+	</p>
+
+	<div id="hiddenLayer" style="display:none"></div>
+	<div class="mw" id="mw_temp" style="display:none;"></div>
+
+	<div id="wrap">
+
+
+		<header id="header">
+			<div class="header_wrap">
+
+
+				<h1 id="logo"><a href="../"></a></h1>
+
+				<div class="search">
+					<a href="" class="control open">열기</a>
+
+					<div class="group">
+						<div class="form">
+							<form id="searchForm" name="searchForm" action="/search.es?mid=a10503000000" method="post">
+								<label for="search">검색</label>
+								<input type="text" placeholder="검색어를 입력해 주세요" class="search_keyword" id="search" name="allKeyWord"
+									value="" title="검색" />
+								<button type="submit" name="button" onclick="document.searchForm.submit(); return false;">검색</button>
+								<div>
+									<input type="hidden" name="_csrf" value="ff5f82f7-ce28-48c9-8b0a-5f472927ee5f" />
+								</div>
+							</form>
+						</div>
+
+						<a href="" class="control close">닫기</a>
+					</div>
+				</div>
+
+				<nav id="gnb1">
+
+
+					<ul id="head_menu" class="topmenu">
+						<li class="lnb1 mnfirst">
+							<a href="/menu.es?mid=a10101000000">국제협력분야</a>
+							<div class="submenu" style="display:none;">
+
+
+								<ul class="sub01">
+									<li class="sub01 subfirst"><a href="/menu.es?mid=a10101000000">국토종합계획</a></li>
+									<li class="sub02"><a href="/menu.es?mid=a10102000000">국토 및 지역</a></li>
+									<li class="sub03"><a href="/menu.es?mid=a10103000000">국토환경</a></li>
+									<li class="sub04"><a href="/menu.es?mid=a10104000000">토지 및 주택</a></li>
+									<li class="sub05"><a href="/menu.es?mid=a10105000000">건설경제산업</a></li>
+									<li class="sub06"><a href="/menu.es?mid=a10106000000">국토인프라</a></li>
+									<li class="sub07 sublast"><a href="/menu.es?mid=a10107000000">공간정보</a></li>
+								</ul>
+
+
+							</div>
+						</li>
+						<li class="lnb2">
+							<a href="/menu.es?mid=a10201000000">국제협력절차</a>
+							<div class="submenu" style="display:none;">
+
+
+								<ul class="sub02">
+									<li class="sub01 subfirst"><a href="/menu.es?mid=a10201000000">외부 이용자 가이드</a></li>
+									<li class="sub02"><a href="/menu.es?mid=a10202000000">내부 이용자 가이드</a></li>
+									<li class="sub03 sublast"><a href="/menu.es?mid=a10203000000">컨설팅 신청</a></li>
+								</ul>
+
+
+							</div>
+						</li>
+						<li class="lnb3">
+							<a href="/menu.es?mid=a10301000000">국제협력사업 현황</a>
+							<div class="submenu" style="display:none;">
+
+
+								<ul class="sub03">
+									<li class="sub01 subfirst"><a href="/menu.es?mid=a10301000000">MOU현황</a></li>
+									<li class="sub02"><a href="/menu.es?mid=a10302000000">초청 연수생 현황</a></li>
+									<li class="sub03"><a href="/menu.es?mid=a10303000000">전문가 초청현황</a></li>
+									<li class="sub04"><a href="/menu.es?mid=a10304000000">국제지식공유워크숍DB</a></li>
+									<li class="sub05"><a href="/menu.es?mid=a10305000000">국제행사 개최DB</a></li>
+									<li class="sub06 sublast"><a href="/menu.es?mid=a10306000000">국제행사 참여DB</a></li>
+								</ul>
+
+
+							</div>
+						</li>
+						<li class="lnb4">
+							<a href="/menu.es?mid=a10401000000">국제협력통계</a>
+							<div class="submenu" style="display:none;">
+
+
+								<ul class="sub04">
+									<li class="sub01 subfirst"><a href="/menu.es?mid=a10401000000">연구성과 통계</a></li>
+									<li class="sub02"><a href="/menu.es?mid=a10402000000">한눈에 보는 통계</a></li>
+									<li class="sub03"><a href="/menu.es?mid=a10403000000">ODA 통계</a></li>
+									<li class="sub04"><a href="/menu.es?mid=a10404000000">해외건설통합정보</a></li>
+									<li class="sub05 sublast"><a href="/menu.es?mid=a10405000000">한국해외인프라 도시개발</a></li>
+								</ul>
+
+
+							</div>
+						</li>
+						<li class="lnb5 mnlast">
+							<a href="/menu.es?mid=a10501000000">서비스소개</a>
+							<div class="submenu" style="display:none;">
+
+
+								<ul class="sub05">
+									<li class="sub01 subfirst"><a href="/menu.es?mid=a10501000000">서비스 소개</a></li>
+									<li class="sub02"><a href="/menu.es?mid=a10502000000">서비스 목표</a></li>
+									<li class="sub03"><a href="/menu.es?mid=a10503000000">조직 안내</a></li>
+									<li class="sub04 sublast"><a href="/menu.es?mid=a10504000000">오시는 길</a></li>
+								</ul>
+
+
+							</div>
+						</li>
+					</ul>
+
+
+				</nav>
+
+				<nav id="gnb2">
+					<a href="" class="control open">열기</a>
+
+
+					<ul id="head_menu_all" class="topmenu_all">
+						<li class="lnb1 mnfirst">
+							<a href="/menu.es?mid=a10101000000">국제협력분야</a>
+							<div class="submenu">
+								<ul class="sub01">
+									<li class="sub01 subfirst"><a href="/menu.es?mid=a10101000000">국토종합계획</a></li>
+									<li class="sub02"><a href="/menu.es?mid=a10102000000">국토 및 지역</a></li>
+									<li class="sub03"><a href="/menu.es?mid=a10103000000">국토환경</a></li>
+									<li class="sub04"><a href="/menu.es?mid=a10104000000">토지 및 주택</a></li>
+									<li class="sub05"><a href="/menu.es?mid=a10105000000">건설경제산업</a></li>
+									<li class="sub06"><a href="/menu.es?mid=a10106000000">국토인프라</a></li>
+									<li class="sub07 sublast"><a href="/menu.es?mid=a10107000000">공간정보</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="lnb2">
+							<a href="/menu.es?mid=a10201000000">국제협력절차</a>
+							<div class="submenu">
+								<ul class="sub02">
+									<li class="sub01 subfirst"><a href="/menu.es?mid=a10201000000">외부 이용자 가이드</a></li>
+									<li class="sub02"><a href="/menu.es?mid=a10202000000">내부 이용자 가이드</a></li>
+									<li class="sub03 sublast"><a href="/menu.es?mid=a10203000000">컨설팅 신청</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="lnb3">
+							<a href="/menu.es?mid=a10301000000">국제협력사업 현황</a>
+							<div class="submenu">
+								<ul class="sub03">
+									<li class="sub01 subfirst"><a href="/menu.es?mid=a10301000000">MOU현황</a></li>
+									<li class="sub02"><a href="/menu.es?mid=a10302000000">초청 연수생 현황</a></li>
+									<li class="sub03"><a href="/menu.es?mid=a10303000000">전문가 초청현황</a></li>
+									<li class="sub04"><a href="/menu.es?mid=a10304000000">국제지식공유워크숍DB</a></li>
+									<li class="sub05"><a href="/menu.es?mid=a10305000000">국제행사 개최DB</a></li>
+									<li class="sub06 sublast"><a href="/menu.es?mid=a10306000000">국제행사 참여DB</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="lnb4">
+							<a href="/menu.es?mid=a10401000000">국제협력통계</a>
+							<div class="submenu">
+								<ul class="sub04">
+									<li class="sub01 subfirst"><a href="/menu.es?mid=a10401000000">연구성과 통계</a></li>
+									<li class="sub02"><a href="/menu.es?mid=a10402000000">한눈에 보는 통계</a></li>
+									<li class="sub03"><a href="/menu.es?mid=a10403000000">ODA 통계</a></li>
+									<li class="sub04"><a href="/menu.es?mid=a10404000000">해외건설통합정보</a></li>
+									<li class="sub05 sublast"><a href="/menu.es?mid=a10405000000">한국해외인프라 도시개발</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="lnb5 mnlast">
+							<a href="/menu.es?mid=a10501000000">서비스소개</a>
+							<div class="submenu">
+								<ul class="sub05">
+									<li class="sub01 subfirst"><a href="/menu.es?mid=a10501000000">서비스 소개</a></li>
+									<li class="sub02"><a href="/menu.es?mid=a10502000000">서비스 목표</a></li>
+									<li class="sub03"><a href="/menu.es?mid=a10503000000">조직 안내</a></li>
+									<li class="sub04 sublast"><a href="/menu.es?mid=a10504000000">오시는 길</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+
+
+					<a href="" class="control close">닫기</a>
+				</nav>
+			</div>
+		</header>
+		<main id="main">
+
+
+			<div id="visual">
+				<strong class="title">Urban<br> Transformation</strong>
+				<ul class="list">
+					<li><img src="../img/main/main_visual.webp" alt="" /></li>
+				</ul>
+
+				<div class="notice">
+					<div class="container">
+						<h2 class="label"><a href="">공지사항</a></h2>
+						<div class="list swiper swiper-container">							
+							<div class="swiper-wrapper">								
+								<a href="/board.es?mid=a10201000000&amp;bid=0001&amp;list_no=3&amp;act=view" class="item swiper-slide">
+									<strong class="title"> mou현황 mou현황 mou현황 mou현황 mou현황 mou현황</strong>
+									<span class="date">2024-01-03</span>
+								</a>
+								<a href="/board.es?mid=a10201000000&amp;bid=0001&amp;list_no=1&amp;act=view" class="item swiper-slide">
+									<strong class="title"> 제목 말줄임 테스트 제목 말줄임 테스트 제목 말줄임 테스트 제목  제목 말줄임 테스트 제목 말줄임 테스트 제목 말줄임 테스트 제목 제목 말줄임 테스트 제목 말줄임 테스트 제목 말줄임 테스트 제목</strong>
+									<span class="date">2024-01-03</span>
+								</a>
+							</div>	
+							<!--//swiper-wrapper  -->
+							<button class="swiper-button swiper-button-prev"><i class="ri-arrow-up-s-fill"></i><span class="sr_only">이전</span></button>
+							<button class="swiper-button swiper-button-next"><i class="ri-arrow-down-s-fill"></i><span class="sr_only">다음</span></button>			
+						</div>
+						<!-- //swiper  -->
+					</div>
+				</div>
+				<!-- //notice -->
+
+			</div>
+			<!-- //visual -->
+			
+			
+
+			<div id="contents">
+				
+
+				<section class="section section1">
+					<div class="biz_perform container">
+						<h2 class="title">Business Performance</h2>
+						<ul class="item_list">
+							<li class="item"><strong class="number">137</strong><span class="title">MOU 건수</span></li>
+							<li class="item"><strong class="number">96<sup>+</sup></strong><span class="title">국제행사 개최 및 참여건수</span></li>
+							<li class="item"><strong class="number">204</strong><span class="title">초청연수생 인원 수</span></li>
+							<li class="item"><strong class="number">175</strong><span class="title">전문가 초청 횟수</span></li>
+						</ul>
+					</div>
+				</section>
+				<!-- //section1 -->
+
+				<section class="section section2">
+					<div class="year50th container">
+						<div class="symbol">
+							<img src="../img/main/year_50th_symbol.svg" alt="50, 함께 일궈온 50년, 모두 누리는 100년, 국토종합계획 50년(1972-2022)">
+						</div>
+						<div class="txt">
+							<span>역경과 격동의 국토종합계획 50년, </span>
+							<strong>더 나은 미래를 향한 도전의 시작</strong>
+							<p>‘국토종합계획’은 ‘국토의 장기적인 발전 방향을 제시하는 종합계획’입니다. 
+							1971년 10월 27일 우리나라 최초의 국토종합계획인 
+							제1차 국토종합개발계획이 공고된 이후, 지금까지 다섯 차례에 걸쳐 
+							수립된 국토 종합계획은 최상위 법정 국토계획으로 대한민국 국토개발 및 
+							관리 정책의 흐름과 방향을 선도해 왔습니다.</p>
+							<a href="" class="btn">국토종합계획 50년 보러가기</a>
+						</div>
+					</div>
+					<!-- //year50th -->
+			
+					<div class="what_we_do container">
+						<h2 class="title">What We Do?</h2>
+						<div class="item_list">
+							<div class="swiper-pagination">
+								<button>국토계획 · 지역연구본부</button>
+								<button>도시연구본부</button>
+								<button>주택 · 부동산연구본부</button>
+								<button>국토인프라 · 공간정보연구본부</button>
+							</div>
+							<!-- //swiper-pagination -->
+							
+							<div class="swiper swiper-container">							
+								<div class="swiper-wrapper">
+									<a href="" class="item item1 swiper-slide">
+										<div class="txt">
+											<strong>국토계획 · 지역연구본부</strong>
+											<p>국토계획 및 지역계획 연구, 국토 및 지역정책 연구, 미래국토 연구, 수도권정책 연구, 지역경제 연구, 지역개발 및 사업제도 연구, 산업입지 연구 등 국토 및 지역발전과 관련한 장단기 정책을 연구하고 있습니다. 또한, 국가균형발전 시책에 관한 조사 및 연구, 정책지원을 전담하고 국토 부문의 남북 및 동아시아 협력에 관한 국내외 연구 네트워크의 구축·활성화를 추진하고 있습니다. </p>
+										</div>
+										<img src="../img/main/biz_visual_01.webp" alt="">
+									</a>
+									<a href="" class="item item2 swiper-slide">
+										<div class="txt">
+											<strong>도시연구본부</strong>
+											<p>국민의 삶의 질 향상과 안전하고 쾌적한 생활환경 조성을 위해 도시 활력 제고, 지속가능한 도시 발전을 위한 인프라 구축, 도시생활환경의 효율적 정비, 탄소중립 및 기후위기 대응, 재해재난에 안전한 도시 조성 등에 관한 도시정책 연구를 수행하고 있습니다. </p>
+										</div>
+										<img src="../img/main/biz_visual_02.webp" alt="">
+									</a>
+									<a href="" class="item item3 swiper-slide">
+										<div class="txt">
+											<strong>주택 · 부동산연구본부</strong>
+											<p>국민의 삶의 질 향상과 국가경제 발전에 이바지하기 위해 주택과 주거, 토지와 관련한 정책개발, 실태조사, 법, 제도 개선을 위한 연구와 서민 주거안정과 부동산시장 안정을 위한 다양한 정책 발굴 및 수립에 기여하기 위한 부동산시장의 진단과 전망, 정책효과 분석, 소비심리조사 등에 기반한 종합적·체계적 정책연구를 수행하고 있습니다. 또한, 건설경기 동향과 건설산업 정책평가, 제도분석, 민간투자연구, 해외시장진출 지원에 대한 연구를 수행하고 있습니다. </p>
+										</div>
+										<img src="../img/main/biz_visual_03.webp" alt="">
+									</a>
+									<a href="" class="item item4 swiper-slide">
+										<div class="txt">
+											<strong>국토인프라 · 공간정보연구본부</strong>
+											<p>기후변화와 글로벌 경쟁시대에 부응하는 교통인프라 정책방향 수립을 위해 전국도로망·철도망 계획, 광역종합교통정책, 국가물류정책 및 계획, 대중교통 활성화를 위한 녹색교통정책 개발 등 국가 및 권역, 도시 차원에서의 주요 교통정책 및 계획을 선도적으로 수립하고 있습니다. 또한, 국토와 관련한 공간정보정책과 계획, 그리고 관련 기술과 방법론을 연구하고 이를 통해 공간정보의 효율적인 생산과 활용을 도모하며, 과학적 정책 수립을 위한 분석을 제공하는 공간정보기술 및 지식 생태계의 허브로서의 기능을 수행합니다.</p>
+										</div>
+										<img src="../img/main/biz_visual_04.webp" alt="">
+									</a>
+								</div>
+								<!-- //swiper-wrapper -->
+								<button class="swiper-button swiper-button-prev"><i class="ri-arrow-left-line"></i><span class="sr_only">이전</span></button>
+								<button class="swiper-button swiper-button-next"><i class="ri-arrow-right-line"></i><span class="sr_only">다음</span></button>		
+								
+							</div>
+							<!-- //swiper -->
+						</div>
+						<!-- //item_list -->
+
+					</div>
+					<!-- //what_we_do -->
+				</section>
+				<!-- //section2 -->
+
+
+				<section class="section section3">
+					<div class="container">
+						<h2>Contact US</h2>
+						<div class="form">
+							<div class="form_group">
+								<label for="inputCompany">소속</label>
+								<input type="text" id="inputCompany" class="form_control">
+							</div>
+							<div class="form_group">
+								<label for="inputEmail">E-Mail</label>
+								<input type="text" id="inputEmail" class="form_control">
+							</div>
+							<div class="form_group">
+								<label for="inputComments">Comments</label>
+								<textarea type="text" id="inputComments" class="form_control"></textarea>
+							</div>
+							<div class="custom_input"><input type="checkbox" id="checkAgree"><label for="checkAgree">개인정보 보호정책에 동의합니다.</label>
+							</div>
+						</div>
+						<button type="submit" class="btn_send">SEND</button>
+					</div>
+				</section>
+				<!-- //section4 -->
+
+
+				<section class="section section4">
+					<div class="item_list container">						
+						<a href="" class="item">
+							<i><img src="../img/main/quick_icon1.svg" alt=""></i>
+							<strong>한눈에 보는 통계</strong>
+						</a>
+						<a href="" class="item">
+							<i><img src="../img/main/quick_icon2.svg" alt=""></i>
+							<strong>외부통계</strong>
+						</a>
+						<a href="" class="item">
+							<i><img src="../img/main/quick_icon3.svg" alt=""></i>
+							<strong>조직안내</strong>
+						</a>
+						<a href="" class="item">
+							<i><img src="../img/main/quick_icon4.svg" alt=""></i>
+							<strong>오시는 길</strong>
+						</a>
+					</div>
+				</section>
+				<!-- //section4 -->
+
+			</div>
+			<!-- //contents -->
+
+
+
+
+
+
+
+
+
+		</main>
+		<footer id="footer">
+			<div class="footer_wrap container">
+
+
+				<!-- <div id="fnb">
+    <ul class="fnb1">
+        <li><a href="">개인정보취급방침</a></li>
+        <li><a href="">이용약관</a></li>
+    </ul>
+
+    <ul class="fnb2">
+        <li class="blog"><a href="">블로그</a></li>
+        <li class="twitter"><a href="">트위터</a></li>
+        <li class="facebook"><a href="">페이스북</a></li>
+        <li class="instagram"><a href="">인스타그램</a></li>
+        <li class="kakao"><a href="">카카오스토리</a></li>
+        <li class="youtube"><a href="">유튜브</a></li>
+    </ul>
+</div> -->
+
+				<div class="related">
+					<a href=""><span>Go To KRIHS</span><i class="ri-external-link-line"></i></a>
+
+				</div>
+
+				<div id="siteinfo">
+					<a href="/" class="logo"><span class="sr_only">GDPC</span></a>
+					<strong class="title">Global Development Partnership Center</strong>
+					<address>Korea Research Institute for Human Settlements 
+						5 Gukchaegyeonguwon-ro, Sejong-si, 30147, Korea 
+					</address>
+					<span>Tel : 82-44-960-0114 / Fax : 82-44-211-47600</span>
+
+					<p class="copyright">Copyright(c) 2023 Global Development Partnership Center. All rights reserved</p>
+				</div>
+
+
+				<a href="#wrap" class="btn_top">TOP</a>
+			</div>
+		</footer>
+	</div>
+
+
+	<!-- 공통 JS -->
+	<script src="../js/func.js"></script>
+	<script src="../js/layout.js"></script>
+
+	<!-- 메인 JS -->
+	<script src="../js/main.js"></script>
+
+
+
+
+
+
+	<script>
+		//try { initNavigation(1, 0); } catch (e) { console.log(""); }
+		//$.ajax({ url:'/logInsert.es?mid=a10000000000' });		// 로그기록
+	</script>
+
+
+</body>
+
+</html>

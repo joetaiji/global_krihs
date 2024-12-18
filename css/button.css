@@ -1,0 +1,96 @@
+@charset "utf-8"; 
+
+/* ------------------------------------------------------------
+ * (주) 이즈소프트 (http://easesoft.kr) 
+ * 2016/02/15 SYH
+ * 사용 예는 guide 사이트 에서 확인  
+ ------------------------------------------------------------ */
+/*Button Box*/
+.BtnBox {clear:both; overflow:hidden}
+
+
+.Btn {background:#fff; border:1px solid #ccc; color:#666; cursor:pointer; display: inline-block; font-size:12px; padding:8px 9px 0 9px; height:33px; letter-spacing:0}
+.Btn:hover {border:1px solid #ccc; color:#333;}
+
+/*btn Size*/
+.mini, .mini a {display:inline-block; font-size:11px; padding:1px 3px !important}
+.Xs, .Xs a{display:inline-block; font-size:12px; padding:0 5px !important; height:28px; vertical-align: middle;}
+.Lg, .Lg a {display:inline-block; font-size:16px !important; padding:0 28px !important; height:50px}
+.Xlg, .Xlg a {display:inline-block; font-size:18px !important; padding:0 35px !important}
+
+/*Radius 모서리 라운드*/
+.Radius {border-radius:4px; background:#fff; border:1px solid #ccc; color:#666; font-size:12px; padding:1px 5px !important; letter-spacing:0; line-height:28px} 
+.Radius:hover {border:1px solid #ccc; color:#666;}
+
+/*Round 타원*/
+.Round {border-radius:100px; background:#fff; border:1px solid #ccc; color:#666; font-size:12px; padding:5px 10px; letter-spacing:0; margin:0 0 10px} 
+
+/*Crcle 동그라미*/
+.Crcle {border-radius:1000px; background:#fff; border:1px solid #ccc; color:#666; font-size:12px; padding:5px 10px; letter-spacing:0; margin:0 0 10px} 
+
+/*outline*/
+.Outline-Black {border:1px solid #000; color:#333}
+.Outline-Black:hover {border: 1px solid #ddd; color:#999}
+/*노랑*/
+.Outline-Yellow {border:1px solid #ffc000; color:#ffc000; line-height:34px}
+.Outline-Yellow:hover {background:#ffc000; border:1px solid #ffc000; color:#fff}
+/*민트 */
+.Outline-Mint {background:#fff; border:1px solid #459c77; border-top:2px solid #459c77; color:#459c77; display:inline-block; padding:6px 15px 5px; margin-right:3px}
+.Outline-Mint:hover {background:#459c77;color:#fff}
+
+.aBtn {margin-top:-5px}
+
+/*button color*/
+.Btn-Black{border:1px solid #000; background:#262626; color:#fff}
+.Btn-Black a, a.Btn-Black, .Btn-Black input, .Btn-Black boutton {color:#fff}
+.Btn-Black:hover{border:1px solid #000; background:#676767; color:#fff}
+
+.Btn-Blue {border:1px solid #2d71ac; background:#428bca; color:#fff;}
+.Btn-Blue a, a.Btn-Blue, .Btn-Blue input, .Btn-Blue boutton {color:#fff}
+.Btn-Blue:hover {border:1px solid #2d71ac; background:#2871af; color:#fff;}
+
+.Btn-Cyan {border:1px solid #189684; background:#1caf9a; color:#fff;}
+.Btn-Cyan a, a.Btn-Cyan, .Btn-Cyan input, .Btn-Cyan boutton {color:#fff}
+.Btn-Cyan:hover {border:1px solid #189684; background:#088976; color:#fff;}
+
+.Btn-Gray {border:1px solid #7d8495; background:#8b91a0; color:#fff}
+.Btn-Gray a, a.Btn-Gray, .Btn-Gray input, .Btn-Gray boutton {color:#fff}
+.Btn-Gray:hover{border:1px solid #50596e; background:#5a6275; color:#fff}
+
+.Btn-Green {border:1px solid #4f9e4f; background:#5cb85c; color:#fff;}
+.Btn-Green a, a.Btn-Green, .Btn-Green input, .Btn-Green boutton {color:#fff}
+.Btn-Green:hover {border:1px solid #4f9e4f; background:#399139; color:#fff;}
+
+.Btn-Navy {border:1px solid #014684; background:#00549f; color:#fff;}
+.Btn-Navy a, a.Btn-Navy, .Btn-Blue Navy, .Btn-Navy boutton {color:#fff}
+.Btn-Navy:hover {border:1px solid #014684; background:#014684; color:#fff;}
+
+.Btn-Skyblue {border:1px solid #12aadd; background:#24bcef; color:#fff;}
+.Btn-Skyblue a, a.Btn-Skyblue, .Btn-Skyblue input, .Btn-Skyblue boutton {color:#fff}
+.Btn-Skyblue:hover {border:1px solid #12aadd; background:#12aadd; color:#fff;}	
+
+.Btn-Yellow {border:1px solid #d69a46; background:#f0ad4e; color:#fff;}
+.Btn-Yellow a, a.Btn-Yellow , .Btn-Yellow input, .Btn-Yellow boutton {color:#fff}
+.Btn-Yellow:hover {border:1px solid #d69a46; background:#e58907; color:#fff;}
+
+.Btn-Violet {border:1px solid #40339d ; background:#f0ad4e; color:#fff;}
+.Btn-Violet a, a.Btn-Violet, .Btn-Violet input, .Btn-Violet boutton {color:#fff}
+.Btn-Violet:hover {border:1px solid #40339d ; background:#e58907; color:#fff;}
+
+.Btn-Mint {border:1px solid #5fb792 ; background:#5fb792; color:#fff;}
+.Btn-Mint a, a.Btn-Mint, .Btn-Mint input, .Btn-Mint boutton {color:#fff}
+.Btn-Mint:hover {border:1px solid #459c77 ; background:#459c77; color:#fff;}
+
+.Btn-group {clear:both; display:block; margin:0 0 20px 0; color:#fff;}	
+
+.Btn input, .Btn button,
+.Radius input, .Radius button,
+.Round input, .Round button,
+.Crcle input, .Crcle button{border:none !important; background:none !important; cursor:pointer; padding:0}
+
+	
+/*아이콘*/
+.BtnBox > a > .icon_down {background:url('/templet/img/common/iconBg.png') no-repeat -2px 1px; display:inline-block; height:16px; width:20px; vertical-align: -2px;}
+.BtnBox > a:hover > .icon_down {background:url('/templet/img/common/iconBg.png') no-repeat -33px 1px}
+.BtnBox > a > .icon_go {background:url('/templet/img/common/iconBg.png') no-repeat -56px 0; display:inline-block; height:16px; width:20px; vertical-align: -2px;}
+.BtnBox > a:hover > .icon_go {background:url('/templet/img/common/iconBg.png') no-repeat -79px 0}

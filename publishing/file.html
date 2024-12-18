@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+<style>
+	*{box-sizing:border-box;}
+	body {margin:0; padding:30px; font-family:'맑은 고딕'; font-size:12px; color:#333; line-height:1.5;}
+	i{font-style: normal;border-radius: 3px;padding:2px 4px;color:#fff;font-weight: bold;font-size: 10px;line-height: 1;margin-left: 5px;margin-right:5px;display: inline-block;}
+	.xi-check{color:#ff3300;font-weight:bold;}
+	.new{margin-right: 20px;position: relative;}
+	.new::after{content:"N"; background-color:#bb05e8;border-radius: 3px;padding:2px 4px;color:#fff;font-weight: bold;font-size: 10px;line-height: 1.2;display: inline-block;position: absolute;right: -20px;}
+	.del,
+	.del:hover{text-decoration: line-through;cursor:default;}
+	/*비고*/
+	.note{display: inline-block;margin-left: 10px;background: #ff3300;color: #fff;padding: 2px 5px;}
+	
+	em {display: inline-block;background-color: #333;color: #fff;border-radius: 3px;padding:0px 3px;font-style: normal;font-size: 11px;margin-left: 5px;}
+	em + em{background-color: #555;margin-left: 5px;}
+	em + em + em{background-color: #333;}
+	em + em + em + em{background-color: #000;}
+	
+	a{color:inherit;text-decoration:none;}
+	a:hover{text-decoration:underline;}
+	
+	.info{border: 1px solid #ddd;background: #f5f5f5;padding: 1rem;margin-bottom: 2rem;}
+	
+	.nav{border-top:3px solid #333;border-bottom:3px solid #333;}
+	.nav ul{margin:0;padding:0;list-style:none;}
+	.topmenu_all{padding:0;}
+	.topmenu_all .title_area{display: none;}
+	.topmenu_all a{ padding:10px;}
+	.topmenu_all span{color:#f3a600;}
+	.topmenu_all li{display: flex;}
+	.topmenu_all li~li{border-top:1px solid #ddd;}
+	.topmenu_all>li{background-color:#778;display: block;}
+	.topmenu_all>li>a{font-weight:bold;font-size:14px;text-align:center;display:block;width:100%;color:#fff;}
+	.topmenu_all .submenu{background-color:#fff;border:1px solid #ddd;}
+	.topmenu_all .submenu>ul>li>a{font-weight: bold;}
+	.topmenu_all .submenu>ul>li>a + .depth2{background-color:#fff;}
+	.topmenu_all .depth2>li>a{background:#f9f9fc;}
+	.topmenu_all .submenu>li>a + .depth2,
+	.topmenu_all .depth2>li>a + .depth3,
+	.topmenu_all .depth3>li>a + .depth4{flex:1 1 80%; max-width:80%;border-left:1px solid #eee;font-size:11px;}
+	.topmenu_all .submenu>ul>li>a,
+	.topmenu_all .depth2>li>a,
+	.topmenu_all .depth3>li>a{flex:1 1 auto;}
+	.topmenu_all .nodata{background-color:#f8f8f8;color:#ccc;}
+	.topmenu_all .complete{background:#eaeaec;}
+	
+	@media screen and (max-width:767px){
+		body{padding:10px;}
+		.topmenu_all a{max-width:100%!important;display:block;}
+		.topmenu_all a + ul{max-width:100%!important;}
+		.topmenu_all li{display: block;}
+		.topmenu_all .depth3{border-top:1px solid #f6f6f6;}
+		.topmenu_all .depth3 li{margin-left:15px;}
+	}
+	</style>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js'></script>
+<script>
+$(document).ready(function(){
+	$("title").text($("h1").text());
+	$(".topmenu_all a").each(function(){
+		$(this).append(" <span> " + $(this).attr("href") + "</span>");		
+	}); 
+    $("em").each(function(){    
+		$(this).parent().addClass("complete");        
+    });   
+});
+</script>
+</head>
+<body>
+<h1>파일리스트 - 국토연</h1>
+<div class="info">	
+	<p>2023.11.23 - JYC</p>
+	<p>작업완료일<em>월/일</em><em class="note">특이사항</em></p>
+</div>
+<nav class="nav" id="gnb">
+	
+	<ul id="head_menu_all" class="topmenu_all">
+		<li><a href="">레이아웃</a>
+			<div class="submenu">
+				<ul class="">
+					<li><a href="main.html">메인<em>1/11</em></a></li>
+					<li><a href="">서브레이아웃-콘텐츠스타일</a></li>
+				</ul>
+			</div>
+		</li>
+		<li class="lnb1 mnfirst">
+			<a href="a10101000000.html">국제협력분야</a>
+			<div class="submenu">
+				<ul class="sub01">
+					<li class="sub01 subfirst"><a href="a10101000000.html">국토종합계획<em>12/22</em></a></li>
+					<li class="sub02"><a href="a10102000000.html">국토 및 지역</a></li>
+					<li class="sub03"><a href="a10103000000.html">국토환경</a></li>
+					<li class="sub04"><a href="a10104000000.html">토지 및 주택</a></li>
+					<li class="sub05"><a href="a10105000000.html">건설경제산업</a></li>
+					<li class="sub06"><a href="a10106000000.html">국토인프라</a></li>
+					<li class="sub07 sublast"><a href="a10107000000.html">공간정보</a></li>
+				</ul>
+			</div>
+		</li>
+		<li class="lnb2">
+			<a href="a10201000000.html">국제협력절차</a>
+			<div class="submenu">
+				<ul class="sub02">
+					<li class="sub01 subfirst"><a href="a10201000000.html">외부 이용자 가이드</a></li>
+					<li class="sub02"><a href="a10202000000.html">내부 이용자 가이드</a></li>
+					<li class="sub03 sublast"><a href="a10203000000.html">컨설팅 신청</a></li>
+				</ul>
+			</div>
+		</li>
+		<li class="lnb3">
+			<a href="a10301000000.html">국제협력사업 현황</a>
+			<div class="submenu">
+				<ul class="sub03">
+					<li class="sub01 subfirst"><a href="a10301000000.html">MOU현황<em>11/23</em></a></li>
+					<li class="sub01 subfirst"><a href="a10301000000_view.html">MOU현황_상세<em>11/24</em></a></li>
+					<li class="sub02"><a href="a10302000000.html">초청 연수생 현황</a></li>
+					<li class="sub03"><a href="a10303000000.html">전문가 초청현황</a></li>
+					<li class="sub04"><a href="a10304000000.html">국제지식공유워크숍DB</a></li>
+					<li class="sub05"><a href="a10305000000.html">국제행사 개최DB</a></li>
+					<li class="sub06 sublast"><a href="a10306000000.html">국제행사 참여DB</a></li>
+				</ul>
+			</div>
+		</li>
+		<li class="lnb4">
+			<a href="a10401000000.html">국제협력통계</a>
+			<div class="submenu">
+				<ul class="sub04">
+					<li class="sub01 subfirst"><a href="a10401000000.html">연구성과 통계</a></li>
+					<li class="sub02"><a href="a10402000000.html">한눈에 보는 통계</a></li>
+					<li class="sub03"><a href="a10403000000.html">ODA 통계</a></li>
+					<li class="sub04"><a href="a10404000000.html">해외건설통합정보</a></li>
+					<li class="sub05 sublast"><a href="a10405000000.html">한국해외인프라 도시개발</a></li>
+				</ul>
+			</div>
+		</li>
+		<li class="lnb5 mnlast">
+			<a href="a10501000000.html">서비스소개</a>
+			<div class="submenu">
+				<ul class="sub05">
+					<li class="sub01 subfirst"><a href="a10501000000.html">서비스 소개</a></li>
+					<li class="sub02"><a href="a10502000000.html">서비스 목표</a></li>
+					<li class="sub03"><a href="a10503000000.html">조직 안내</a></li>
+					<li class="sub04 sublast"><a href="a10504000000.html">오시는 길</a></li>
+				</ul>
+			</div>
+		</li>
+	</ul>
+
+	<!--<ul id="head_menu" class="topmenu">
+		
+		<li class="type"><a href="">콘텐츠</a>	
+		</li>
+		 <li class="type"><a href="">게시판</a>
+			<ul class="depth1">
+				<li>
+				  <a href="">공지사항</a>
+				  <ul class="depth2">
+					<li>
+					  <a href="bod_list.html">Board List</a>
+					  <a href="bod_list_detail.html">Board List(상세검색)</a>
+					</li>
+					<li>
+					  <a href="bod_view.html">Board View</a>
+					</li>
+					<li>
+					  <a href="bod_media.html">media View</a>
+					</li>
+					<li>
+					  <a href="bod_write.html">Board Write</a>
+					</li>
+				  </ul>
+				</li>
+				<li>
+				  <a href="bod_gallery.html">갤러리</a>
+				  <ul class="depth2">
+					<li>
+					  <a href="bod_gallery.html">갤러리</a>
+					  <ul class="depth3">
+						<li>
+						  <a href="bod_gallery.html">Gallery List</a>
+						</li>
+						<li>
+						  <a href="gallery_view.html">Gallery View</a>
+						</li>                    
+					  </ul>
+					</li>
+					<li>
+					  <a href="book_style1.html">북스타일1</a>
+					</li>
+					<li>
+					  <a href="book_style2.html">북스타일2</a>
+					</li>
+				  </ul>
+				  
+				</li>
+				<li>
+				  <a href="table_thumb.html">썸네일 보드</a>                  
+				</li>
+				<li>
+				  <a href="faq.html">FAQ</a>
+				</li>
+				<li>
+				  <a href="calendar.html">calendar</a>
+				</li>
+				<li>
+				  <a href="form.html">form</a>
+				</li>                
+			  </ul>
+		</li> 
+	</ul> -->
+  
+</nav>
+</body>
+</html>

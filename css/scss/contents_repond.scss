@@ -1,0 +1,55 @@
+@charset "UTF-8";
+/*-------------------------------------------------
+title       : 콘텐츠
+Author      : JYC
+Create date : 2023-11-24
+-------------------------------------------------*/
+@media (max-width: 1024px) { 
+  .board_search{ padding: 2rem 1rem;
+		.form_row{ flex-direction:column; gap:1rem;}
+		.form_select{width: 100%; min-width:inherit;}
+		#keyword{width:calc(100% - 8rem);}
+		.keyword_wrap{margin-left: inherit;}
+	}
+	/* 국토종합개발계획 */	
+	.history_section {
+		.plan_history .container{padding-left: 0;padding-right: 0;}
+	}
+	.photo_section{
+		.title_area{width: 100%; padding-top:3rem; padding-bottom: 2rem;}		
+		.layer_article {
+			.layer_cont{width: 100%;height: 100%;
+				.bg {
+					img{width: 100%;height: 100%;object-fit: cover;}
+				}
+			}
+			.info_area{width: 100%;}
+		}
+	}
+
+}
+
+@media (max-width: 768px) { 
+	.plan_50th .path{margin-top: 3rem;}
+	.intro_section{
+		#animation_container,
+		#canvas,
+		#dom_overlay_container{width: 100%!important; height:auto!important;}
+		h2{
+			strong{	font-size: 6rem;}
+			small{font-size: 1.8rem;}
+		}
+	}
+	.history_section{padding: 0;
+		.plan_1 .container::before{display: none;}
+		.plan_1 .title_area{margin-top: 0;}
+		.plan_history .container .title_area{padding: 3rem 1rem 3rem 0;}
+		.plan_history .container .title_area strong{font-size: 1.6rem;}
+		.plan_history .container .title_area h3{font-size: 2.6rem;line-height: normal;}
+		.plan_history .container .title_area figure img{width: 80%;}	
+		.plan_history .container .history_list li{padding-left: 2rem;padding-top: 4rem;}
+		.plan_history .container .history_list em{left: 2rem;}
+	}	
+	.photo_section .title_area h2{font-size: 4rem;margin-bottom: 2rem;}			
+	.contact_section .container{max-width:inherit;}
+}

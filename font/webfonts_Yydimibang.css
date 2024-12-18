@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: 'Yydimibang';
+	src: url('./Yydimibang/YydimibangBold.woff2') format('woff2'),
+			url('./Yydimibang/YydimibangBold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
